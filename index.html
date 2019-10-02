@@ -8,56 +8,104 @@
   <link
     href="https://fonts.googleapis.com/css?family=Roboto:400,500,500i&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="articles-style.css">
+  <title>Articles</title>
 </head>
 
 <body>
   <div class="color--secondary">
-    <header>
-      <div class="logo"></div>
+    <header class="flex-container navigation padding-box">
+
       <nav>
-        <ul class="menu">
-          <li class="menu__item">
+        <ul class="menu flex-container">
+          <li class="logo"></li>
+          <!--home-->
+          <li class="menu__item home">
             <a href="" class="uppercase menu__link">Home</a>
           </li>
-          <li class="menu__item">
-            <a href="" class="uppercase menu__link">Articles</a>
+          <!--articles-->
+          <li class="menu__item" id="articles">
+            <a href="index.html" class="uppercase menu__link">Articles</a>
           </li>
 
-          <li class="menu__item" id="videos" tabindex="1"><a href="#"
-              class="uppercase menu__link main-item">Videos</a></li>
+          <!--videos-->
+          <li class="menu__item" id="videos">
+            <a href="#" class="uppercase menu__link main-item">
+              Videos
+            </a>
 
-          <li class="menu__item" id="drop-down">
-            <p class="uppercase menu__link main-item" style="color: black">
-              Videos &#9650;</p>
-            <ul class="sub-menu">
-              <li>
-                <a href="#" class="uppercase "> Recent</a>
+            <ul class="sub-menu flex-container" id="drop-down">
+              <li class="menu__video">
+                <a href="#"
+                  class="uppercase flex-container">
+                  Videos <span class="video-tryangle">&#9650;</span>
+                </a>
               </li>
-              <li>
-                <a href="#" class="uppercase "> Popular</a>
+              <li class="sub-menu__el">
+                <a href="videos.html" class="">Most Recent</a>
               </li>
-              <li>
-                <a href="#" class="uppercase ">All</a>
+              <li class="sub-menu__el">
+                <a href="videos.html" class="">Most Popular</a>
+              </li>
+              <li class="sub-menu__el">
+                <a href="videos.html" class="">All</a>
               </li>
             </ul>
 
           </li>
-
-
-
+          <!--contact_us-->
           <li class="menu__item" id="contacts">
             <a href="" class="uppercase menu__link">Contact Us</a>
           </li>
         </ul>
       </nav>
+
+      <!--search-->
+      <div class="flex-container">
+        <form action="" class="sign flex-container">
+          <p><a href="">Sign in</a> / <a href="">Sign up</a></p>
+        </form>
+
+        <form action="" class="form-search">
+          <input type="checkbox" id="loupa">
+          <label for="loupa">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="18px" height="18px">
+              <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                d="M7.165,11.653 C4.742,11.653 2.778,9.689 2.778,7.266 C2.778,4.844 4.742,2.880 7.165,2.880 C9.587,2.880 11.551,4.844 11.551,7.266 C11.551,9.689 9.587,11.653 7.165,11.653 M7.165,0.930 C3.665,0.930 0.828,3.767 0.828,7.266 C0.828,10.766 3.665,13.603 7.165,13.603 C8.739,13.603 10.175,13.025 11.283,12.076 L11.553,12.343 L11.553,13.115 L16.425,17.981 L17.878,16.527 L13.016,11.653 L12.242,11.653 L11.973,11.386 C12.923,10.278 13.501,8.841 13.501,7.266 C13.501,3.767 10.664,0.930 7.165,0.930 " />
+            </svg> -->
+          </label>
+          <input type="search" name="search" id="search" placeholder="Search">
+        </form>
+
+
+        <!--burger_menu-->
+        <div id="burger-menu">
+          <input type="checkbox" id="burger-checkbox">
+          <label for="burger-checkbox" id="label-for-burger-checkbox">
+            <span></span>
+          </label>
+
+          <nav class="burger-nav">
+            <ul>
+              <li> <a href="#">Home</a> </li>
+              <li> <a href="index.html">Articles</a> </li>
+              <li> <a href="videos.html">Videos</a> </li>
+              <li> <a href="#">Contact Us</a> </li>
+            </ul>
+          </nav>
+        </div>
+
+      </div>
     </header>
   </div>
 
 
-  <main>
-    <div class="size-of-article">
+  <main >
+    <div class="size-of-article padding-box">
+
       <article class="container">
         <figure>
           <img src="img/Daniel/Avatar.png" alt="Daniel">
@@ -66,7 +114,7 @@
           </figcaption>
         </figure>
 
-        <img src="img/Daniel/Image.png" alt="samsung">
+        <img src="img/Daniel/Image.png" alt="samsung" class="container__img">
 
         <section class="container__description">
           <h2> Samsung Pushes the Edge in S6 </h2>
@@ -76,12 +124,8 @@
             approach to winning consumers with the best technical specs and the
             biggest screens has run out of steam...
           </p>
-
           <a class="uppercase link-button" href="#">More</a>
         </section>
-
-
-
       </article>
 
       <article class="container">
@@ -92,13 +136,13 @@
           </figcaption>
         </figure>
 
-        <img src="img/Loitz/Image.png" alt="samsung">
+        <img src="img/Loitz/Image.png" alt="samsung" class="container__img">
 
         <section class="container__description">
           <h2> Contrast is the Key </h2>
           <p>
-            A group I follow on Facebook, <span>Aurora Borealis
-              Notifications</span> ,
+            A group I follow on Facebook, <i>Aurora Borealis
+              Notifications</i> ,
             photograph the Northern Lights around the world each night and post
             their sightings. It’s really spectacular to see how impressive
             nature
@@ -115,7 +159,7 @@
 
 
     <div class="color--blue main-size">
-      <section class="pagination">
+      <section class="pagination padding-box">
 
         <a class="flex-container text-decoration--no text-color--white"
           href="#">
@@ -127,12 +171,25 @@
           href="#">
           <div>Next</div>
           <div class="arrow arrow--right"></div>
-          
+
         </a>
 
       </section>
     </div>
   </main>
+
+  <footer>
+      <nav class="footer flex-container padding-box">
+        <ul class="flex-container footer-navigation">
+          <li><a href="#">Home</a></li>
+          <li><a href="index.html">Articles</a></li>
+          <li><a href="videos.html">Videos</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <span>&copy; 2015. All Rights Reserved.</span>
+      </nav>
+  
+    </footer>
 
 
 

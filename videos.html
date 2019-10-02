@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:400,500,500i&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="videos-style.css">
+  <title>Videos</title>
+</head>
+
+<body>
+  <div class="color--secondary">
+    <header class="flex-container navigation padding-box">
+
+      <nav>
+        <ul class="menu flex-container">
+          <li class="logo"></li>
+          <!--home-->
+          <li class="menu__item home">
+            <a href="" class="uppercase menu__link">Home</a>
+          </li>
+          <!--articles-->
+          <li class="menu__item">
+            <a href="index.html" class="uppercase menu__link">Articles</a>
+          </li>
+
+          <!--videos-->
+          <li class="menu__item" id="videos">
+            <a href="#" class="uppercase menu__link main-item">
+              Videos
+            </a>
+
+            <ul class="sub-menu flex-container" id="drop-down">
+              <li class="menu__video">
+                <a href="#"
+                  class="uppercase flex-container">
+                  Videos <span class="video-tryangle">&#9650;</span>
+                </a>
+              </li>
+              <li class="sub-menu__el">
+                <a href="#" class="">Most Recent</a>
+              </li>
+              <li class="sub-menu__el">
+                <a href="#" class="">Most Popular</a>
+              </li>
+              <li class="sub-menu__el">
+                <a href="#" class="">All</a>
+              </li>
+            </ul>
+
+          </li>
+          <!--contact_us-->
+          <li class="menu__item" id="contacts">
+            <a href="" class="uppercase menu__link">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!--search-->
+      <div class="flex-container">
+        <form action="" class="sign flex-container">
+          <p><a href="">Sign in</a> / <a href="">Sign up</a></p>
+        </form>
+
+        <form action="" class="form-search">
+          <input type="checkbox" id="loupa">
+          <label for="loupa">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="18px" height="18px">
+              <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                d="M7.165,11.653 C4.742,11.653 2.778,9.689 2.778,7.266 C2.778,4.844 4.742,2.880 7.165,2.880 C9.587,2.880 11.551,4.844 11.551,7.266 C11.551,9.689 9.587,11.653 7.165,11.653 M7.165,0.930 C3.665,0.930 0.828,3.767 0.828,7.266 C0.828,10.766 3.665,13.603 7.165,13.603 C8.739,13.603 10.175,13.025 11.283,12.076 L11.553,12.343 L11.553,13.115 L16.425,17.981 L17.878,16.527 L13.016,11.653 L12.242,11.653 L11.973,11.386 C12.923,10.278 13.501,8.841 13.501,7.266 C13.501,3.767 10.664,0.930 7.165,0.930 " />
+            </svg> -->
+          </label>
+          <input type="search" name="search" id="search" placeholder="Search">
+        </form>
+
+
+        <!--burger_menu-->
+        <div id="burger-menu">
+          <input type="checkbox" id="burger-checkbox">
+          <label for="burger-checkbox" id="label-for-burger-checkbox">
+            <span></span>
+          </label>
+
+          <nav class="burger-nav">
+            <ul>
+              <li> <a href="#">Home</a> </li>
+              <li> <a href="index.html">Articles</a> </li>
+              <li> <a href="videos.html">Videos</a> </li>
+              <li> <a href="#">Contact Us</a> </li>
+            </ul>
+          </nav>
+        </div>
+
+      </div>
+
+
+
+
+      <!-- <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+        <ul class="menu__box">
+          <li><a class="menu__item" href="#">Главная</a></li>
+          <li><a class="menu__item" href="#">Проекты</a></li>
+          <li><a class="menu__item" href="#">Команда</a></li>
+          <li><a class="menu__item" href="#">Блог</a></li>
+          <li><a class="menu__item" href="#">Контакты</a></li>
+        </ul>
+      </div> -->
+
+
+    </header>
+  </div>
+
+
+
+
+  <main class="padding-box">
+    <div class="size-of-article">
+
+      <article class="video-background">
+        <div class="video--main">
+          <video id="video-on-click" class="video-fit"
+            src="video/Component-vs-element.mp4" poster="img/video.png">
+          </video>
+          <div id="video-button">
+            <button id="button--play" onclick="playVideo()">
+              <span id="tryangle" class="content--play">
+
+              </span>
+            </button>
+
+          </div>
+        </div>
+
+        <div class="video-description">
+          <h2>Watch the Trailers for Legends of Tomorrow <br> and Other New CW
+            Shows
+          </h2>
+          <p>tvguide.com</p>
+        </div>
+      </article>
+
+      <article class="pack-of-videos">
+        <!-- supergirl-->
+        <section class="video--secondary">
+          <video src="" poster="img/supergirl.png" class="video-fit"></video>
+          <h3>The Supergirl Trailer is Here</h3>
+          <p><a href="">ign.com</a></p>
+        </section>
+        <!--mad max-->
+        <section class="video--secondary">
+          <video src="" poster="img/mad-max.png" class="video-fit"></video>
+          <h3>Mad Max: Fury Road</h3>
+          <p><a href="">nytimes.com</a></p>
+        </section>
+        <!--elephant-->
+        <section class="video--secondary">
+          <video src="" poster="img/elephant.png" class="video-fit"></video>
+          <h3>Elephants Have a Secret Language</h3>
+          <p><a href="">cnn.com</a></p>
+        </section>
+        <!--Carey-->
+        <section class="video--secondary">
+          <video src="" poster="img/carey.png" class="video-fit"></video>
+          <h3>Mariah Carey -- Diva Does Disneyland</h3>
+          <p><a href="">tmz.com</a></p>
+        </section>
+        <!--Lebron-->
+        <section class="video--secondary">
+          <video src="" poster="img/lebron.png" class="video-fit"></video>
+          <h3>Cleveland's Elephant in the Room</h3>
+          <p><a href="">espn.com</a></p>
+        </section>
+        <!--piggy-->
+        <section class="video--secondary">
+          <video src="" poster="img/piggy.png" class="video-fit"></video>
+          <h3>Miss Piggy Gets Feminist Award</h3>
+          <p><a href="">usatoday.com</a></p>
+        </section>
+
+      </article>
+
+
+    </div>
+  </main>
+
+
+
+
+  <!-- <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+        
+            <ul class="menu__box">
+              <li><a class="menu__item" href="#">Главная</a></li>
+              <li><a class="menu__item" href="#">Проекты</a></li>
+              <li><a class="menu__item" href="#">Команда</a></li>
+              <li><a class="menu__item" href="#">Блог</a></li>
+              <li><a class="menu__item" href="#">Контакты</a></li>
+            </ul>
+          </div> -->
+
+
+
+  <footer>
+    <nav class="footer flex-container padding-box">
+      <ul class="flex-container footer-navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Articles</a></li>
+        <li><a href="#">Videos</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <span>&copy; 2015. All Rights Reserved.</span>
+    </nav>
+
+  </footer>
+
+  <script>
+    function playVideo() {
+      var video = document.getElementById("video-on-click");
+      var button = document.getElementById("button--play");
+      var tryangle = document.getElementById("tryangle");
+      if (video.paused) {
+        video.play();
+        tryangle.classList.remove("content--play");
+        tryangle.classList.add("content--pause");
+      } else {
+        video.pause();
+        tryangle.classList.add("content--play");
+        tryangle.classList.remove("content--pause");
+      }
+    }
+  </script>
+
+
+
+
+</body>
+
+</html>
